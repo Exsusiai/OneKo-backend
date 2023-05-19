@@ -1,0 +1,254 @@
+[
+  {
+    "id": "1",
+    "title": "Comfortable apartment near Alexanderplatz",
+    "description": "This is a nice apartment in Berlin",
+    "price": 1000,
+    "address": {
+      "street": "Alexanderplatz",
+      "district": "Mitte",
+      "zipCode": "10178",
+      "city": "Berlin",
+      "state": "Berlin",
+      "country": "Germany",
+      "latitude": 52.521918,
+      "longitude": 13.413215
+    },
+    "pictures": [
+      "https://images.unsplash.com/photo-1678382782815-3c2d95418115?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+    ],
+    "rooms": 2,
+    "area": 50,
+    "maxTenants": 2,
+    "type": "apartment",
+    "availableFrom": "2021-10-01",
+    "availableTo": "2022-10-01",
+    "isSaved": false,
+    "createdAt": "2021-09-01",
+    "updatedAt": "2021-09-01"
+  },
+  {
+    "id": "2",
+    "title": "A cozy room in a 4-room apart in Wedding",
+    "description": "",
+    "price": 300,
+    "address": {
+      "street": "Müllerstraße",
+      "district": "Mitte",
+      "zipCode": "13353",
+      "city": "Berlin",
+      "state": "Berlin",
+      "country": "Germany",
+      "latitude": 52.54944,
+      "longitude": 13.34111
+    },
+    "pictures": [
+      "https://images.unsplash.com/photo-1648032634537-5e6c0a618ea8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZyUyMGJlcmxpbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    ],
+    "rooms": 1,
+    "area": 20,
+    "maxTenants": 1,
+    "type": "privateRoom",
+    "availableFrom": "2021-10-01",
+    "availableTo": "2022-10-01",
+    "isSaved": false,
+    "createdAt": "2021-09-01",
+    "updatedAt": "2021-09-01"
+  },
+  {
+    "id": "3",
+    "title": "WG in Charlottenburg",
+    "description": "This is a WG in Charlottenburg",
+    "price": 500,
+    "address": {
+      "street": "Schillerstraße 96",
+      "district": "Charlottenburg-Wilmersdorf",
+      "zipCode": "10625",
+      "city": "Berlin",
+      "state": "Berlin",
+      "country": "Germany",
+      "latitude": 52.51075575250985,
+      "longitude": 13.317505242888455
+    },
+    "pictures": [
+      "https://images.unsplash.com/photo-1603232026106-59fb69acbac2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNoYXJsb3R0ZW5idXJnJTIwcGFsYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    ],
+    "rooms": 1,
+    "area": 20,
+    "maxTenants": 1,
+    "type": "privateRoom",
+    "availableFrom": "2021-10-01",
+    "availableTo": "2022-10-01",
+    "isSaved": true,
+    "createdAt": "2021-09-01",
+    "updatedAt": "2021-09-01"
+  },
+  {
+    "id": "4",
+    "title": "A furnished studio in Postdamer Platz",
+    "description": "This is a furnished studio in Postdamer Platz",
+    "price": 800,
+    "address": {
+      "street": "Potsdamer Platz 10",
+      "district": "Mitte",
+      "zipCode": "10785",
+      "city": "Berlin",
+      "state": "Berlin",
+      "country": "Germany",
+      "latitude": 52.50768723196136,
+      "longitude": 13.377082059113002
+    },
+    "pictures": [
+      "https://lh5.googleusercontent.com/p/AF1QipNmb754h8HLLgtKToDoDyymUZixkR0ES_tOUsM1=w426-h240-k-no"
+    ],
+    "rooms": 1,
+    "area": 30,
+    "maxTenants": 1,
+    "type": "studio",
+    "availableFrom": "2021-10-01",
+    "availableTo": "2022-10-01",
+    "isSaved": false,
+    "createdAt": "2021-09-01",
+    "updatedAt": "2021-09-01"
+  },
+  {
+    "id": "5",
+    "title": "Beautiful house near Tempelhofer Feld *new building*",
+    "description": "This is a beautiful house near Tempelhofer Feld",
+    "price": 1500,
+    "address": {
+      "street": "Tempelhofer Damm",
+      "district": "Tempelhof-Schöneberg",
+      "zipCode": "12099",
+      "city": "Berlin",
+      "state": "Berlin",
+      "country": "Germany",
+      "latitude": 52.46531229420902,
+      "longitude": 13.396280156071112
+    },
+    "pictures": [
+      "https://lh5.googleusercontent.com/p/AF1QipO6X8lhOYvSYAKwBWNXUyFGBLePP9euFnQxwtJw=w408-h543-k-no"
+    ],
+    "rooms": 3,
+    "area": 100,
+    "maxTenants": 3,
+    "type": "house",
+    "availableFrom": "2021-10-01",
+    "availableTo": "2022-10-01",
+    "isSaved": true,
+    "createdAt": "2021-09-01",
+    "updatedAt": "2021-09-01"
+  },
+  {
+    "id": "6",
+    "title": "A room in a shared apartment",
+    "description": "This is a room in a shared apartment",
+    "price": 400,
+    "address": {
+      "street": "Karl-Marx-Straße",
+      "district": "Neukölln",
+      "zipCode": "12043",
+      "city": "Berlin",
+      "state": "Berlin",
+      "country": "Germany",
+      "latitude": 52.477444,
+      "longitude": 13.435621
+    },
+    "pictures": [
+      "https://lh5.googleusercontent.com/p/AF1QipNWxlgxrJ7ymwKCyXlXDKKraROHGHvUoZOdv7qW=w408-h353-k-no"
+    ],
+    "rooms": 1,
+    "area": 20,
+    "maxTenants": 1,
+    "type": "privateRoom",
+    "availableFrom": "2021-10-01",
+    "availableTo": "2022-10-01",
+    "isSaved": false,
+    "createdAt": "2021-09-01",
+    "updatedAt": "2021-09-01"
+  },
+  {
+    "id": "7",
+    "title": "Fashion studio in center of Pankow",
+    "description": "This is a fashion studio in center of Pankow",
+    "price": 600,
+    "address": {
+      "street": "Schönhauser Allee",
+      "district": "Pankow",
+      "zipCode": "10435",
+      "city": "Berlin",
+      "state": "Berlin",
+      "country": "Germany",
+      "latitude": 52.535498,
+      "longitude": 13.411657
+    },
+    "pictures": [
+      "data:image/jpeg;base64,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"
+    ],
+    "rooms": 2,
+    "area": 50,
+    "maxTenants": 2,
+    "type": "studio",
+    "availableFrom": "2021-10-01",
+    "availableTo": "2022-10-01",
+    "isSaved": false,
+    "createdAt": "2021-09-01",
+    "updatedAt": "2021-09-01"
+  },
+  {
+    "id": "8",
+    "title": "Stylish 2,5-room-home in Niederschöneweide, Berlin",
+    "description": "This is a stylish 2,5-room-home in Niederschöneweide, Berlin",
+    "price": 1800,
+    "address": {
+      "street": "Britzer Straße",
+      "district": "Treptow-Köpenick",
+      "zipCode": "12439",
+      "city": "Berlin",
+      "state": "Berlin",
+      "country": "Germany",
+      "latitude": 52.453579611101425,
+      "longitude": 13.51844998182341
+    },
+    "pictures": [
+      "https://wunderflatsng.blob.core.windows.net/imagesproduction/ygWAYUeu0LxP4ZpKHNqS2-large.jpg"
+    ],
+    "rooms": 2,
+    "area": 80,
+    "maxTenants": 2,
+    "type": "apartment",
+    "availableFrom": "2021-10-01",
+    "availableTo": "2022-10-01",
+    "isSaved": true,
+    "createdAt": "2021-09-01",
+    "updatedAt": "2021-09-01"
+  },
+  {
+    "id": "9",
+    "title": "Waterside maisonette with terrace in Berlin-Kreuzberg",
+    "description": "This is a waterside maisonette with terrace in Berlin-Kreuzberg",
+    "price": 2800,
+    "address": {
+      "street": "Paul-Lincke-Ufer",
+      "district": "Friedrichshain-Kreuzberg",
+      "zipCode": "10999",
+      "city": "Berlin",
+      "state": "Berlin",
+      "country": "Germany",
+      "latitude": 52.497778,
+      "longitude": 13.437222
+    },
+    "pictures": [
+      "https://wunderflatsng.blob.core.windows.net/imagesproduction/SyoeD68FM-large.jpg"
+    ],
+    "rooms": 3,
+    "area": 120,
+    "maxTenants": 3,
+    "type": "apartment",
+    "availableFrom": "2021-10-01",
+    "availableTo": "2022-10-01",
+    "isSaved": false,
+    "createdAt": "2021-09-01",
+    "updatedAt": "2021-09-01"
+  }
+]
