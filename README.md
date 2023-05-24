@@ -18,9 +18,9 @@ The purpose of this project is not only to complete the corresponding back-end e
 ## API Endpoints
 
 - ‘GET /v1/listings‘: Get a listing of all apartments.
-- ‘GET /v1/listings/:id’: Get specific information about an apartment by ID.
-- ‘POST /v1/listings‘: Create a new apartment. A JSON object matching the Apartment structure needs to be provided.
-- ‘DELETE /v1/listings/:id‘: Delete an apartment. The ID of the apartment to be deleted is required.
+- ‘GET /v1/listing/:id’: Get specific information about an apartment by ID.
+- ‘POST /v1/listing‘: Create a new apartment. A JSON object matching the Apartment structure needs to be provided.
+- ‘DELETE /v1/listing/:id‘: Delete an apartment. The ID of the apartment to be deleted is required.
 
 
 ## Data structure

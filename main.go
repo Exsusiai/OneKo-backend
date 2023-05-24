@@ -16,6 +16,7 @@ import (
 var collection *mongo.Collection
 
 func main() {
+	//Create a new MongoDB client, the function returns a pointer to the mongo.Client structure and an error object
 	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://localhost:27017"))
 	if err != nil {
 		panic(err)
@@ -27,21 +28,28 @@ func main() {
 	}
 	collection = client.Database("oneko").Collection("apartments")
 
+	// Create a new Gin router
 	router := gin.Default()
 	router.GET("/v1/listings", getApartments)
-	router.GET("/v1/listings/:id", getApartment)
-	router.POST("/v1/listings", createApartment)
-	router.DELETE("/v1/listings/:id", deleteApartment)
+	router.GET("/v1/listing/:id", getApartment)
+	router.POST("/v1/listing", createApartment)
+	router.DELETE("/v1/listing/:id", deleteApartment)
+	//Starts the HTTP server, enters an internal listening loop, and listens for incoming HTTP requests on the given address and port
 	router.Run(":8000")
 }
 
 func getApartments(c *gin.Context) {
 	var apartments []Apartment
+	//context.Background() is an empty context, which is generally used when you don't care about cancellation, deadlines, or incoming values. 
+	//bson.D{} is an empty BSON document, which means there is no filter condition, 
+	//so this method will return all documents in the collection.
 	cursor, err := collection.Find(context.Background(), bson.D{})
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
+	//defer the execution of a function to the function that contains it (getApartments) will be executed when it is about to return. 
+	//cursor.Close(context.Background()) is an operation to close the database cursor, which can prevent resource leaks.
 	defer cursor.Close(context.Background())
 
 	for cursor.Next(context.Background()) {
@@ -67,6 +75,10 @@ func getApartment(c *gin.Context) {
 
 func createApartment(c *gin.Context) {
 	var apartment Apartment
+// Check if BindJSON encountered an error while performing this parsing and binding operation. 
+// Possible errors include:
+// 1.The body of the request is not valid JSON.
+// 2.The requested JSON data could not be matched to the Apartment structure.
 	if err := c.BindJSON(&apartment); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
@@ -100,23 +112,6 @@ func createApartment(c *gin.Context) {
 	c.JSON(http.StatusCreated, apartment.ID)
 }
 
-func generateID(ctx context.Context) (string, error) {
-	cursor, err := collection.Find(ctx, bson.D{}, options.Find().SetSort(bson.D{{"id", -1}}).SetLimit(1))
-	if err != nil {
-		return "", err
-	}
-	var lastApartment Apartment
-	if cursor.Next(ctx) {
-		cursor.Decode(&lastApartment)
-		lastID, _ := strconv.Atoi(lastApartment.ID)
-		return strconv.Itoa(lastID + 1), nil
-	} else {
-		// If there are no documents in the collection, start from 1
-		return "1", nil
-	}
-}
-
-
 func deleteApartment(c *gin.Context) {
 	id := c.Param("id")
 	_, err := collection.DeleteOne(context.Background(), bson.D{{"id", id}})
@@ -127,28 +122,3 @@ func deleteApartment(c *gin.Context) {
 
 	c.JSON(http.StatusOK, gin.H{"message": "Apartment deleted successfully"})
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-m, 
